@@ -157,6 +157,9 @@ page.nav_close = function(){
 }
 
 page.scrolltop = function(){
+	if (page.meowanim){
+		clearInterval(page.meowanim);
+	}
 	if (page.scrollar){
 		clearInterval(page.scrollar);
 	}
