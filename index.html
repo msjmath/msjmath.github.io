@@ -22,6 +22,25 @@ height: 175px;
 width:100%;
 position:fixed;
 }
+#subheader{
+	 width:100%;
+	 height:125px;
+	 position:relative;
+	 left:0px;
+	 top:0px;
+	 background:rgb(150,255,150);
+	 color:white;
+}
+
+#navcontainer{
+	border:lightgray 1px solid;
+	width:100%;
+	height:auto;
+	position:relative;
+	left:0px;
+	top:0px;
+	background:rgb(255,255,255);
+}
 
 body{
 background:rgb(200,200,200);
@@ -131,12 +150,12 @@ window.onscroll = page.scroll;
 </head>
 <body>
 <div id="header" style="left:0px;top:0px;z-index:100;">
-  <div style="width:100%;height:125px;position:relative left:0px;top:0px;background:rgb(150,255,150);color:white;">
+  <div id="subheader">
   	<center>
       MSJMath!!!
   	</center>
   </div>
-  <div style="border:lightgray 1px solid;width:100%;height:auto;position:relative;left:0px;top:0px;background:rgb(255,255,255)">
+  <div id="navcontainer">
     <a>
 	    <div id="nav_anim" onclick="page.scrolltop()" style="background:lightgray;border-radius:10px;border:gray 1px solid;text-align:center;width:100px;height:95%;position:absolute;right:-200px;">
 		    <div style="margin:7px auto auto auto;font-size:17;color:white;">Back to Top</div>
@@ -147,10 +166,10 @@ window.onscroll = page.scroll;
     </a>
   <center>
 	<table style="margin:0px auto 0px auto;"><tr>
-		<td class="navitem"><a href="/default.html">
+		<td class="navitem"><a href="#">
 			<div class="navunit" onmouseout="this.style.backgroundColor='white'" onmouseover="this.style.backgroundColor='lightgray'">Navigation-2</div>
 		</a></td>
-		<td class="navitem"><a href="/Machines/default.html">
+		<td class="navitem"><a href="#">
 			<div class="navunit" onmouseout="this.style.backgroundColor='white'" onmouseover="this.style.backgroundColor='lightgray'">Navigation-1</div>
 		</a></td>
 	</tr></table>
