@@ -1,8 +1,8 @@
 
 <html>
 <head>
-<base href="http://msjmath.github.io">
-<title>title</title>
+<base href="http://msjmath.github.io" target="_blank">
+<title>HOME-MSJMath</title>
 <!--scrollbar-->
 <style>
 ::-webkit-scrollbar              {width:7px;background:rgba(0,0,0,0.2);}
@@ -16,166 +16,10 @@
 ::-webkit-scrollbar-thumb:active { background:rgba(0,0,0,0.7);}
 ::-webkit-scrollbar:active       {background:rgba(0,0,0,0.3);}
 </style>
-
-<style>
-#nav_anim{
-	 background:darkred;
-	 border-radius:0px;
-	 border:gray 0px solid;
-	 text-align:center;width:100px;
-	 height:100%;
-	 position:absolute;
-	 right:-200px;
-}
-
-#nav_anim2{
-	 background:darkred;
-	 border-radius:0px;
-	 border:gray 0px solid;
-	 text-align:center;width:100px;
-	 height:100%;
-	 position:absolute;
-	 right:-200px;
-}
-
-#header{
-height:auto;
-width:100%;
-position:fixed;
-top:0px;
-left:0px;
-background:url('images/background.jpg');
-background-position: 0px -300px;
-}
-
-#subheader{
-	 width:100%;
-	 height:125px;
-	 position:relative;
-	 left:0px;
-	 top:0px;
-	 color:white;
-}
-
-#navcontainer{
-	border:lightgray 0px solid;
-	width:100%;
-	height:auto;
-	position:relative;
-	left:0px;
-	top:0px;
-	background:rgba(200,0,0,0.5);
-	color:white;
-}
-
-
-
-body{
-background:rgb(255,255,255);
-}
-
-.navunit{
-margin:auto;
-font-size:17;
-color:white;
-}
-
-.navitem{
-width:100px;
-height:30px;
-text-align:center;
-}
-
-a{
-text-decoration:none;
-}
-
-.content{
-	position:absolute;
-	top:180px;
-	left:0px;
-	width:100%;
-}
-
-.subcontent{
-	width:1000px;
-	margin:auto;
-	background:white;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="basic.css"/>
+<script src="js/navbar.js"></script>
 <script>
-var page= new Object();
-
-page.toppler=false;
-page.meowanim=0;
-page.scrollar=0;
-page.navanim=0;
-
-page.scroll = function() {
-	document.getElementById("header").style.top=Math.max(0-window.pageYOffset,-125);
-	if(window.pageYOffset>125 && !page.toppler){
-		//animatenavbaropen
-		page.nav_open();
-		page.toppler=true;
-	}
-	if(window.pageYOffset<125 && page.toppler){
-		//animatenavbarclose
-		page.nav_close();
-		page.toppler=false;
-	}
-	
-	
-	
-}
-
-page.nav_open = function(){
-	if (page.meowanim){
-		clearInterval(page.meowanim);
-	}
-	page.timer=0;
-	page.navanim=setInterval(function(){
-		page.timer+=0.02;
-		document.getElementById("nav_anim").style.left=150*(-200+(1-Math.pow(5,-page.timer))*400)/184;
-		document.getElementById("nav_anim2").style.right=150*(-200+(1-Math.pow(5,-page.timer))*400)/184;
-		if (page.timer>2){
-			clearInterval(page.navanim);
-		}
-	}, 20);
-}
-
-page.nav_close = function(){
-	clearInterval(page.navanim);
-	page.catcher=page.timer;
-	page.timer=0;
-	page.meowanim=setInterval(function(){
-		page.timer+=0.02;
-		document.getElementById("nav_anim").style.left=Math.pow(3,-page.timer)*(150*(-200+(1-Math.pow(5,-page.catcher))*400)/184+400)-400;
-		document.getElementById("nav_anim2").style.right=Math.pow(3,-page.timer)*(150*(-200+(1-Math.pow(5,-page.catcher))*400)/184+400)-400;
-		if (page.timer>2){
-			clearInterval(page.meowanim);
-		}
-	}, 20);
-}
-
-page.scrolltop = function(){
-	if (page.meowanim){
-		clearInterval(page.meowanim);
-	}
-	if (page.scrollar){
-		clearInterval(page.scrollar);
-	}
-	page.timer=0;
-	page.scrollar=setInterval(function(){
-		page.timer+=0.02;
-		window.scrollTo(0,0.9*window.pageYOffset-1);
-		if (window.pageYOffset<1){
-			clearInterval(page.scrollar);
-		}
-	}, 20);
-	
-}
-</script>
-<script>
+//page stuff
 window.onscroll = page.scroll;
 </script>
 </head>
@@ -184,7 +28,7 @@ window.onscroll = page.scroll;
   <div id="subheader">
   	<center>
   	<div style="font-size:250%;position:relative;top:50px;width:50%;background:rgba(200,0,0,0.5);">
-  		MSJ Math Club!
+  		MSJ Math Club
   	</div>
   	</center>
   </div>
@@ -199,21 +43,21 @@ window.onscroll = page.scroll;
     </a>
   <center>
 	<table style="margin:0px auto 0px auto;"><tr>
-		<a href="index.html"><td class="navitem">
+		<td class="navitem"><a href="index.html">
 			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='darkred'">Home</div>
-		</td></a>
-		<a href="lectures.html"><td class="navitem">
+		</a></td>
+		<td class="navitem"><a href="lectures.html">
 			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='darkred'">Lectures</div>
-		</td></a>
-		<a href="events.html"><td class="navitem">
+		</a></td>
+		<td class="navitem"><a href="events.html">
 			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='darkred'">Events</div>
-		</td></a>
-		<a href="tournament.html"><td class="navitem">
+		</a></td>
+		<td class="navitem"><a href="tournament.html">
 			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='darkred'">MMM</div>
-		</td></a>
-		<a href="littlekids.html"><td class="navitem">
+		</a></td>
+		<td class="navitem"><a href="littlekids.html">
 			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='darkred'">MagMaR</div>
-		</td></a>
+		</a></td>
 	</tr></table>
   </center>
 </div>
@@ -221,10 +65,10 @@ window.onscroll = page.scroll;
 
 <div class="content">
 <div class="subcontent" style="height:2000px;">
-<center>
-
+<center style="font-size:12px;font-family:Times">
 <h1>The page you are trying to find is not ready yet and/or the page does not exist yet</h1>
 <h2>(404 error, btw)</h2>
+
 
 </center>
 </div>
