@@ -1,0 +1,236 @@
+
+<html>
+<head>
+<base href="http://msjmath.github.io">
+<title>title</title>
+<!--scrollbar-->
+<style>
+::-webkit-scrollbar              {width:7px;background:rgba(0,0,0,0.2);}
+::-webkit-scrollbar-thumb        { background:rgba(0,0,0,0.3);}
+
+
+::-webkit-scrollbar-thumb:hover  { background:rgba(0,0,0,0.5);}
+::-webkit-scrollbar:hover        {background:rgba(0,0,0,0.2);}
+
+
+::-webkit-scrollbar-thumb:active { background:rgba(0,0,0,0.7);}
+::-webkit-scrollbar:active       {background:rgba(0,0,0,0.3);}
+</style>
+
+<style>
+#nav_anim{
+	 background:darkred;
+	 border-radius:0px;
+	 border:gray 0px solid;
+	 text-align:center;width:100px;
+	 height:100%;
+	 position:absolute;
+	 right:-200px;
+}
+
+#nav_anim2{
+	 background:darkred;
+	 border-radius:0px;
+	 border:gray 0px solid;
+	 text-align:center;width:100px;
+	 height:100%;
+	 position:absolute;
+	 right:-200px;
+}
+
+#header{
+height:auto;
+width:100%;
+position:fixed;
+top:0px;
+left:0px;
+background:url('images/background.jpg');
+background-position: 0px -300px;
+}
+
+#subheader{
+	 width:100%;
+	 height:125px;
+	 position:relative;
+	 left:0px;
+	 top:0px;
+	 color:white;
+}
+
+#navcontainer{
+	border:lightgray 0px solid;
+	width:100%;
+	height:auto;
+	position:relative;
+	left:0px;
+	top:0px;
+	background:rgba(200,0,0,0.5);
+	color:white;
+}
+
+
+
+body{
+background:rgb(255,255,255);
+}
+
+.navunit{
+margin:auto;
+font-size:17;
+color:white;
+}
+
+.navitem{
+width:100px;
+height:30px;
+text-align:center;
+}
+
+a{
+text-decoration:none;
+}
+
+.content{
+	position:absolute;
+	top:180px;
+	left:0px;
+	width:100%;
+}
+
+.subcontent{
+	width:1000px;
+	margin:auto;
+	background:white;
+}
+</style>
+<script>
+var page= new Object();
+
+page.toppler=false;
+page.meowanim=0;
+page.scrollar=0;
+page.navanim=0;
+
+page.scroll = function() {
+	document.getElementById("header").style.top=Math.max(0-window.pageYOffset,-125);
+	if(window.pageYOffset>125 && !page.toppler){
+		//animatenavbaropen
+		page.nav_open();
+		page.toppler=true;
+	}
+	if(window.pageYOffset<125 && page.toppler){
+		//animatenavbarclose
+		page.nav_close();
+		page.toppler=false;
+	}
+	
+	
+	
+}
+
+page.nav_open = function(){
+	if (page.meowanim){
+		clearInterval(page.meowanim);
+	}
+	page.timer=0;
+	page.navanim=setInterval(function(){
+		page.timer+=0.02;
+		document.getElementById("nav_anim").style.left=150*(-200+(1-Math.pow(5,-page.timer))*400)/184;
+		document.getElementById("nav_anim2").style.right=150*(-200+(1-Math.pow(5,-page.timer))*400)/184;
+		if (page.timer>2){
+			clearInterval(page.navanim);
+		}
+	}, 20);
+}
+
+page.nav_close = function(){
+	clearInterval(page.navanim);
+	page.catcher=page.timer;
+	page.timer=0;
+	page.meowanim=setInterval(function(){
+		page.timer+=0.02;
+		document.getElementById("nav_anim").style.left=Math.pow(3,-page.timer)*(150*(-200+(1-Math.pow(5,-page.catcher))*400)/184+400)-400;
+		document.getElementById("nav_anim2").style.right=Math.pow(3,-page.timer)*(150*(-200+(1-Math.pow(5,-page.catcher))*400)/184+400)-400;
+		if (page.timer>2){
+			clearInterval(page.meowanim);
+		}
+	}, 20);
+}
+
+page.scrolltop = function(){
+	if (page.meowanim){
+		clearInterval(page.meowanim);
+	}
+	if (page.scrollar){
+		clearInterval(page.scrollar);
+	}
+	page.timer=0;
+	page.scrollar=setInterval(function(){
+		page.timer+=0.02;
+		window.scrollTo(0,0.9*window.pageYOffset-1);
+		if (window.pageYOffset<1){
+			clearInterval(page.scrollar);
+		}
+	}, 20);
+	
+} 
+</script>
+<script>
+window.onscroll = page.scroll;
+</script>
+</head>
+<body>
+<div id="header" style="left:0px;top:0px;z-index:100;">
+  <div id="subheader">
+  	<center>
+  	<div style="font-size:250%;position:relative;top:50px;width:50%;background:rgba(200,0,0,0.5);">
+  		MSJ Math Club!
+  	</div>
+  	</center>
+  </div>
+  <div id="navcontainer">
+    <a>
+	    <div id="nav_anim" onclick="page.scrolltop()">
+		    <div style="margin:7px auto auto auto;font-size:17;color:white;">Back to Top</div>
+	    </div>
+	    <div id="nav_anim2" onclick="page.scrolltop()">
+	  	  <div style="margin:7px auto auto auto;font-size:17;color:white;">Back to Top</div>
+	    </div>
+    </a>
+  <center>
+	<table style="margin:0px auto 0px auto;"><tr>
+		<td class="navitem"><a href="index.html">
+			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='darkred'">Home</div>
+		</a></td>
+		<td class="navitem"><a href="lectures.html">
+			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='darkred'">Lectures</div>
+		</a></td>
+		<td class="navitem"><a href="events.html">
+			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='darkred'">Events</div>
+		</a></td>
+		<td class="navitem"><a href="tournament.html">
+			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='darkred'">MMM</div>
+		</a></td>
+		<td class="navitem"><a href="littlekids.html">
+			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='darkred'">MagMaR</div>
+		</a></td>
+	</tr></table>
+  </center>
+</div>
+</div>
+
+<div class="content">
+<div class="subcontent" style="height:2000px;">
+<center>
+
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
+	At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat…
+	
+</center>
+</div>
+</div>
+
+
+</body>
+</html>
