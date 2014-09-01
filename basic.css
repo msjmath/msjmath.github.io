@@ -1,5 +1,5 @@
 #nav_anim{
-	 background:rgb(255, 180, 50);
+	 background:rgb(0,200,0);
 	 border-radius:0px;
 	 border:gray 0px solid;
 	 text-align:center;width:100px;
@@ -9,7 +9,7 @@
 }
 
 #nav_anim2{
-	 background:rgb(255, 180, 50);
+	 background:rgb(0,200,0);
 	 border-radius:0px;
 	 border:gray 0px solid;
 	 text-align:center;width:100px;
@@ -24,7 +24,7 @@ width:100%;
 position:fixed;
 top:0px;
 left:0px;
-background:rgb(120, 255, 50);
+background:rgb(0,200,0);
 background-position: 0px -300px;
 }
 
@@ -44,20 +44,20 @@ background-position: 0px -300px;
 	position:relative;
 	left:0px;
 	top:0px;
-	background:rgb(255, 255, 50);;
+	background:rgb(255, 255, 255);;
 	color:white;
 }
 
 
 
 body{
-background:rgb(100, 200, 255);;
+background:rgb(255,255,255);;
 }
 
 .navunit{
 margin:auto;
 font-size:17;
-color:orange;
+color:green;
 }
 
 .navitem{
