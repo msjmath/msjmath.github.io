@@ -51,13 +51,13 @@ background-position: 0px -300px;
 
 
 body{
-background:rgb(255,255,255);;
+background:lightgreen;
 }
 
 .navunit{
 margin:auto;
 font-size:17;
-color:green;
+color:orange;
 }
 
 .navitem{
@@ -80,5 +80,5 @@ text-decoration:none;
 .subcontent{
 	width:1000px;
 	margin:auto;
-	background:white;
+	background:orange;
 }
