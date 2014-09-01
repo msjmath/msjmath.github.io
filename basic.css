@@ -51,7 +51,7 @@ background-position: 0px -300px;
 
 
 body{
-background:rgb(255,180,128);
+background:orange;
 }
 
 .navunit{
@@ -80,5 +80,5 @@ text-decoration:none;
 .subcontent{
 	width:1000px;
 	margin:auto;
-	background:rgb(255,180,128);
+	background:orange;
 }
