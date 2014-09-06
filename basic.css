@@ -51,7 +51,7 @@ background-position: 0px -300px;
 
 
 body{
-background:dodgerblue;
+background:black;
 }
 
 .navunit{
@@ -80,5 +80,5 @@ text-decoration:none;
 .subcontent{
 	width:800px;
 	margin:auto;
-	background:dodgerblue;
+	background:black;
 }
