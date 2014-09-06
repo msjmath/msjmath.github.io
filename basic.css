@@ -1,5 +1,5 @@
 #nav_anim{
-	 background:rgb(0,200,0);
+	 background:rgb(0,150,0);
 	 border-radius:0px;
 	 border:gray 0px solid;
 	 text-align:center;width:100px;
@@ -9,7 +9,7 @@
 }
 
 #nav_anim2{
-	 background:rgb(0,200,0);
+	 background:rgb(0,150,0);
 	 border-radius:0px;
 	 border:gray 0px solid;
 	 text-align:center;width:100px;
@@ -24,7 +24,7 @@ width:100%;
 position:fixed;
 top:0px;
 left:0px;
-background:rgb(0,200,0);
+background:rgb(0,150,0);
 background-position: 0px -300px;
 }
 
