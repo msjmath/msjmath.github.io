@@ -1,14 +1,34 @@
 
 <html>
 <head>
-<base href="http://msjmath.github.io" target="_blank">
+<base href="//msjmath.github.io" target="_self">
 <title>HOME-MSJMath</title>
 <!--scrollbar-->
 <style>
-hr.black{
+/* unvisited link */
+a:link {
+    color: #AAFFAA;
+}
+
+/* visited link */
+a:visited {
+    color: #AAFFFF;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FFFF00;
+}
+
+/* selected link */
+a:active {
+    color: #FFFFFF;
+}
+
+hr.white{
 	border:solid 0px white;
 	height:1px;
-	background:black;
+	background:white;
 }
 
 ::-webkit-scrollbar              {width:7px;background:rgba(0,0,0,0.2);}
@@ -33,15 +53,15 @@ window.onscroll = page.scroll;
 <div id="header" style="left:0px;top:0px;z-index:100;background:rgb(96, 200, 40);">
   <div id="subheader">
   	<center>
-  	<div style="font-size:250%;position:relative;top:50px;width:50%;background:rgba(96, 200, 40,0.5);">
-  		MSJ Math Club!
+  	<div style="font-size:400%;position:relative;top:50px;width:50%;background:rgba(96, 200, 40,0.5);font-family:georgia;">
+  		<i>MSJ Math Club!</i>
   	</div>
   	</center>
   </div>
   <div id="navcontainer">
     <a>
 	    <div id="nav_anim" onclick="page.scrolltop()">
-		    <div style="margin:7px auto auto auto;font-size:17;color:white;">Back to Top</div>
+		    <div style="margin:7px auto auto auto;font-size:17;color:white;">Back to Top </div>
 	    </div>
 	    <div id="nav_anim2" onclick="page.scrolltop()">
 	  	  <div style="margin:7px auto auto auto;font-size:17;color:white;">Back to Top</div>
@@ -50,19 +70,22 @@ window.onscroll = page.scroll;
   <center>
 	<table style="margin:0px auto 0px auto;"><tr>
 		<td class="navitem"><a href="index.html">
-			<div class="navunit" onmouseout="this.style.color='orange'" onmouseover="this.style.color='white'" >Home</div>
+			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='black'" >Home</div>
 		</a></td>
 		<td class="navitem"><a href="lectures.html">
-			<div class="navunit" onmouseout="this.style.color='orange'" onmouseover="this.style.color='white'">Lectures</div>
+			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='black'">Lectures</div>
 		</a></td>
 		<td class="navitem"><a href="events.html">
-			<div class="navunit" onmouseout="this.style.color='orange'" onmouseover="this.style.color='white'">Events</div>
+			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='black'">Events</div>
 		</a></td>
 		<td class="navitem"><a href="tournament.html">
-			<div class="navunit" onmouseout="this.style.color='orange'" onmouseover="this.style.color='white'">MMM</div>
+			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='black'">MMM</div>
 		</a></td>
 		<td class="navitem"><a href="littlekids.html">
-			<div class="navunit" onmouseout="this.style.color='orange'" onmouseover="this.style.color='white'">MagMaR</div>
+			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='black'">MagMaR</div>
+		</a></td>
+		<td class="navitem"><a href="contact.html">
+			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='black'">Contact</div>
 		</a></td>
 	</tr></table>
   </center>
@@ -70,16 +93,34 @@ window.onscroll = page.scroll;
 </div>
 
 <div class="content">
-<div class="subcontent" style="height:2000px;">
-<center style="font-size:16px;font-family:Times">
+<div class="subcontent" style="font-size:16px;font-family:Times;color:white;">
+<p>
 <font style="font-size:250%;">
-  		Welcome
+Home
 </font>
-<hr class="black"/>
-To a new year of impossibly complex algebra, really bashy geometry problems, casework and delicious pizza! 
+<hr class="white"/>
+Welcome to a new year of impossibly complex algebra, really bashy geometry problems, casework, and delicious pizza! 
+It will be a fun year with a mixture of competition math, recreational mathematics, 
+and even a bit of "higher-level" math, hopefully with something new for everyone. 
+To avoid conflicts with other clubs (we want you to try out different clubs too, especially freshmen!), our first math
+club meeting will be on Wednesday (September 3) in C5 at lunch. However, all subsequent weekly math club meetings will 
+be on Thursdays in C5 at lunch, unless otherwise specified.<br/>
+<br/>
+If you are interested in joining MSJ Math Club and you have not signed up, please fill out this form 
+<a href="https://docs.google.com/forms/d/1xON2SnsMmzi_bryAbIP1zGYoZX5m1iMtC1k58NX6kPs/viewform">here</a>.
+<br/><br/>
+P.S. In addition, we'd really appreciate it if you could take some time to fill out this 
+<a href="https://docs.google.com/forms/d/1EclkHilDFePb4UzyBZF0WK_wcj--_VZtB6YV59OieaI/viewform">survey</a>. 
+As officers, we'd like to know what members of Math Club are interested in, so we can better plan out our 
+events/lectures and what level they should be at. Also, if you know anyone who'd be interested in Math Club, 
+let them know that they can still sign up 
+<a href="https://docs.google.com/forms/d/1xON2SnsMmzi_bryAbIP1zGYoZX5m1iMtC1k58NX6kPs/viewform">here</a>.
+<br/>
+<br/>
+Click the Events tab for a table of upcoming math competitions
 
 
-</center>
+</p>
 </div>
 </div>
 
