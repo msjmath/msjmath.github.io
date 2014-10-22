@@ -11,6 +11,7 @@ var header=
       '<li><a class="nav" href="magmar.html">MagMaR</a></li>'+
       '<li><a class="nav" href="contact.html">Contact</a></li>'+
     '</ul>'+
+    '<div class="line"></div>'+
   '</div>';
 
 var footer=''
