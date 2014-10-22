@@ -1,102 +1,24 @@
 <html>
 <head>
-<base href="//msjmath.github.io" target="_self">
 <title>HOME-MSJMath</title>
-<!--scrollbar-->
-<style>
-/* unvisited link */
-a:link {
-    color: #AAFFAA;
-}
-
-/* visited link */
-a:visited {
-    color: #AAFFFF;
-}
-
-/* mouse over link */
-a:hover {
-    color: #FFFF00;
-}
-
-/* selected link */
-a:active {
-    color: #FFFFFF;
-}
-
-hr.white{
-	border:solid 0px white;
-	height:1px;
-	background:white;
-}
-
-::-webkit-scrollbar              {width:7px;background:rgba(0,0,0,0.2);}
-::-webkit-scrollbar-thumb        { background:rgba(0,0,0,0.3);}
-
-
-::-webkit-scrollbar-thumb:hover  { background:rgba(0,0,0,0.5);}
-::-webkit-scrollbar:hover        {background:rgba(0,0,0,0.2);}
-
-
-::-webkit-scrollbar-thumb:active { background:rgba(0,0,0,0.7);}
-::-webkit-scrollbar:active       {background:rgba(0,0,0,0.3);}
-</style>
 <link rel="stylesheet" type="text/css" href="basic.css"/>
-<script src="js/navbar.js"></script>
-<script>
-//page stuff
-window.onscroll = page.scroll;
-</script>
+<script src="basic.js"></script>
 </head>
-<body>
-<div id="header" style="left:0px;top:0px;z-index:100;background:rgb(96, 200, 40);">
-  <div id="subheader">
-  	<center>
-  	<div style="font-size:400%;position:relative;top:50px;width:50%;background:rgba(96, 200, 40,0.5);font-family:georgia;">
-  		<i>MSJ Math Club!</i>
-  	</div>
-  	</center>
-  </div>
-  <div id="navcontainer">
-    <a>
-	    <div id="nav_anim" onclick="page.scrolltop()">
-		    <div style="margin:7px auto auto auto;font-size:17;color:white;">Back to Top </div>
-	    </div>
-	    <div id="nav_anim2" onclick="page.scrolltop()">
-	  	  <div style="margin:7px auto auto auto;font-size:17;color:white;">Back to Top</div>
-	    </div>
-    </a>
-  <center>
-	<table style="margin:0px auto 0px auto;"><tr>
-		<td class="navitem"><a href="index.html">
-			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='black'" >Home</div>
-		</a></td>
-		<td class="navitem"><a href="lectures.html">
-			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='black'">Lectures</div>
-		</a></td>
-		<td class="navitem"><a href="events.html">
-			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='black'">Events</div>
-		</a></td>
-		<td class="navitem"><a href="tournament.html">
-			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='black'">MMM</div>
-		</a></td>
-		<td class="navitem"><a href="littlekids.html">
-			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='black'">MagMaR</div>
-		</a></td>
-		<td class="navitem"><a href="contact.html">
-			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='black'">Contact</div>
-		</a></td>
-	</tr></table>
-  </center>
-</div>
-</div>
+<body onload="setup();">
 
 <div class="content">
-<div class="subcontent" style="font-size:16px;font-family:Times;color:white;">
-<p>
+<div class="intro">
+</div>
+
+
+<!---->
+<div class="post">
+<div class="post-title">Calendar <span class="post-author"></span></div>
+<div class="spacer">&nbsp;</div>
+<div class="post-content">
 <center>
-<table style="color:white;border: solid 1px white;width:500px;" cellspacing="5px">
-<tr><td style="border-bottom:solid 1px white">Event</td><td style="border-bottom:solid 1px white">Date</td></tr>
+<table style="border: solid 0px black;width:500px;" cellspacing="5px">
+<tr><td style="border-bottom:solid 1px black">Event</td><td style="border-bottom:solid 1px black">Date</td></tr>
 <tr><td>CaML #1</td><td>Oct 14</td></tr>
 <tr><td>CaML #2</td><td>Nov 11</td></tr>
 <tr><td>CaML #3</td><td>Dec 9</td></tr>
@@ -111,11 +33,10 @@ window.onscroll = page.scroll;
 <tr><td>AIME I/II</td><td>Mar 19/25</td></tr>
 <tr><td>USA(J)MO </td><td>Apr 28</td></tr>
 </table>
-If you see an error with the above table, contact us. (Contact info maybe found under contact tab.)
+<br/>
+If you see an error with the above table, contact us. (Contact info may be found under contact tab.)
 </center>
-
-
-</p>
+</div>
 </div>
 </div>
 

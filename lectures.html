@@ -1,176 +1,82 @@
 <html>
 <head>
-<base href="//msjmath.github.io" target="_self">
 <title>HOME-MSJMath</title>
-<!--scrollbar-->
-<style>
-/* unvisited link */
-a:link {
-    color: #AAFFAA;
-}
-
-/* visited link */
-a:visited {
-    color: #AAFFFF;
-}
-
-/* mouse over link */
-a:hover {
-    color: #FFFF00;
-}
-
-/* selected link */
-a:active {
-    color: #FFFFFF;
-}
-
-hr.white{
-	border:solid 0px white;
-	height:1px;
-	background:white;
-}
-
-::-webkit-scrollbar              {width:7px;background:rgba(0,0,0,0.2);}
-::-webkit-scrollbar-thumb        { background:rgba(0,255,0,0.3);}
-
-
-::-webkit-scrollbar-thumb:hover  { background:rgba(0,255,0,0.5);}
-::-webkit-scrollbar:hover        {background:rgba(0,255,0,0.2);}
-
-
-::-webkit-scrollbar-thumb:active { background:rgba(0,255,0,0.7);}
-::-webkit-scrollbar:active       {background:rgba(0,255,0,0.3);}
-</style>
 <link rel="stylesheet" type="text/css" href="basic.css"/>
-<script src="js/navbar.js"></script>
-<script>
-//page stuff
-window.onscroll = page.scroll;
-</script>
+<script src="basic.js"></script>
 </head>
-<body>
-<div id="header" style="left:0px;top:0px;z-index:100;background:rgb(96, 200, 40);">
-  <div id="subheader">
-  	<center>
-  	<div style="font-size:400%;position:relative;top:50px;width:50%;background:rgba(96, 200, 40,0.5);font-family:georgia;">
-  		<i>MSJ Math Club!</i>
-  	</div>
-  	</center>
-  </div>
-  <div id="navcontainer">
-    <a>
-	    <div id="nav_anim" onclick="page.scrolltop()">
-		    <div style="margin:7px auto auto auto;font-size:17;color:white;">Back to Top </div>
-	    </div>
-	    <div id="nav_anim2" onclick="page.scrolltop()">
-	  	  <div style="margin:7px auto auto auto;font-size:17;color:white;">Back to Top</div>
-	    </div>
-    </a>
-  <center>
-	<table style="margin:0px auto 0px auto;"><tr>
-		<td class="navitem"><a href="index.html">
-			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='black'" >Home</div>
-		</a></td>
-		<td class="navitem"><a href="lectures.html">
-			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='black'">Lectures</div>
-		</a></td>
-		<td class="navitem"><a href="events.html">
-			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='black'">Events</div>
-		</a></td>
-		<td class="navitem"><a href="tournament.html">
-			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='black'">MMM</div>
-		</a></td>
-		<td class="navitem"><a href="littlekids.html">
-			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='black'">MagMaR</div>
-		</a></td>
-		<td class="navitem"><a href="contact.html">
-			<div class="navunit" onmouseout="this.style.color='white'" onmouseover="this.style.color='black'">Contact</div>
-		</a></td>
-	</tr></table>
-  </center>
-</div>
-</div>
+<body onload="setup();">
 
 <div class="content">
-<div class="subcontent" style="font-size:16px;font-family:Times;color:white;">
-<p>
-<center>
-<!--meow-->
-<p>
-<font style="font-size:250%;">
-Mass Points!
-</font>
-<hr class="white"/>
-<object data="pdf/mass.pdf" type="application/pdf" width="100%" height="70%" style="border:solid 0px white">
-  <p>It appears you don't have a PDF plugin for this browser.
-  No biggie... you can <a href="pdf/mass.pdf">click here to
-  download the PDF file.</a></p>
-</object>
-</p>
-<!--meow-->
-<p>
-<font style="font-size:250%;">
-Recursion!
-</font>
-<hr class="white"/>
-<object data="pdf/recursion.pdf" type="application/pdf" width="100%" height="70%" style="border:solid 0px white">
-  <p>It appears you don't have a PDF plugin for this browser.
-  No biggie... you can <a href="pdf/recursion.pdf">click here to
-  download the PDF file.</a></p>
-</object>
-</p>
-<!--meow-->
-<p>
-<font style="font-size:250%;">
-Modular Arithmetic!
-</font>
-<hr class="white"/>
-<object data="pdf/totient.pdf" type="application/pdf" width="100%" height="70%" style="border:solid 0px white">
-  <p>It appears you don't have a PDF plugin for this browser.
-  No biggie... you can <a href="pdf/totient.pdf">click here to
-  download the PDF file.</a></p>
-</object>
-</p>
-<!--meow-->
-<p>
-<font style="font-size:250%;">
-Stable Marriages and Relationships!
-</font>
-<hr class="white"/>
-<object data="pdf/stable.pdf" type="application/pdf" width="100%" height="70%" style="border:solid 0px white">
-  <p>It appears you don't have a PDF plugin for this browser.
-  No biggie... you can <a href="pdf/stable.pdf">click here to
-  download the PDF file.</a></p>
-</object>
-</p>
-<!--meow-->
-<p>
-<font style="font-size:250%;">
-Counting!
-</font>
-<hr class="white"/>
-<object data="pdf/counting.pdf" type="application/pdf" width="100%" height="70%" style="border:solid 0px white">
-  <p>It appears you don't have a PDF plugin for this browser.
-  No biggie... you can <a href="pdf/counting.pdf">click here to
-  download the PDF file.</a></p>
-</object>
-</p>
-<p>
-<font style="font-size:250%;">
-Vieta's formulas!
-</font>
-<hr class="white"/>
-<object data="pdf/vieta.pdf" type="application/pdf" width="100%" height="70%" style="border:solid 0px white">
-  <p>It appears you don't have a PDF plugin for this browser.
-  No biggie... you can <a href="pdf/vieta.pdf">click here to
-  download the PDF file.</a></p>
-</object>
-</p>
-We'll put the handouts from last year on this page eventually. 
-</center>
-
-</p>
+<div class="intro">
+Handouts are posted here approximately every week!
 </div>
+
+<!--meow-->
+<div class="post">
+<div class="post-title">Mass Points<span class="post-author">~Alvin</span></div>
+<div class="spacer">&nbsp;</div>
+<span class="post-content">
+Mass points is a technique that simplifies the process of finding ratios between lengths of segments in a
+geometric problem, and it is actually based on the concept of torque (from physics). Problems that use mass
+points can usually be solved using similar triangles, area ratios, or vector bashing, but mass points gives us
+a cleaner, faster solution. <br/> <a href="pdf/mass.pdf">(click here for pdf)</a></span>
+<br/><br/>
+</div>
+<!--meow-->
+<div class="post">
+<div class="post-title">Recursion<span class="post-author">~Tiancheng</span></div>
+<div class="spacer">&nbsp;</div>
+<span class="post-content">Recursion is the repeated application of a function, and recursion is the repeated application of a function,
+and recursion is the repeated application of a function, and recursion is the repeated application of a function,
+and...<br/><br/>Recursion is a powerful tool that can be used to solve a wide variety of computational and olympiad problems
+alike. <br/> <a href="pdf/recursion.pdf">(click here for pdf)</a></span>
+<br/><br/>
+</div>
+<!--meow-->
+<div class="post">
+<div class="post-title">Modular Arithmetic<span class="post-author">~Austin</span></div>
+<div class="spacer">&nbsp;</div>
+<span class="post-content">
+Modular Arithmetic is a topic in number theory that concerns the remainders resulting from division. 
+Euler's totient theorem gives us a powerful tool to use when dealing modular arithmetic with exponents.
+<br/><a href="pdf/totient.pdf">(click here for pdf)</a></span>
+<br/><br/>
+</div>
+<!-- -->
+<div class="post">
+<div class="post-title">Stable Marriage<span class="post-author">~Alvin</span></div>
+<div class="spacer">&nbsp;</div>
+<span class="post-content">
+N single men and N single women are desperate to get married, and they need your advice as
+to how to pair up. Each person has ranked the members of the opposite gender in order of who they want
+their partner to be. How do you make everyone as happy as possible, or at least create a
+stable arrangement?
+<br/><a href="pdf/stable.pdf">(click here for pdf)</a></span>
+<br/><br/>
+</div>
+<!--meow-->
+<div class="post">
+<div class="post-title">Counting<span class="post-author">~Tiancheng</span></div>
+<div class="spacer">&nbsp;</div>
+<span class="post-content">
+Problems involving counting the number of ways to choose something come up frequently
+on math competitions like the AMC's and AIME's. The combinations function and its uses is one of the 
+fundamentals of combinatorics.<br/>
+<a href="pdf/counting.pdf">(click here for pdf)</a></span>
+<br/><br/>
+</div>
+<!-- -->
+<div class="post">
+<div class="post-title">Vieta's Formulas<span class="post-author">~Austin</span></div>
+<div class="spacer">&nbsp;</div>
+<span class="post-content">
+Vieta's Formulas (also called Viete's Formulae) are a quick way to determine the sum, product, etc. of the
+roots of a polynomial. They are closely related to the symmetric polynomials, which form and entry point 
+into Galois theory and some topics in modern algebra.<br/>
+<a href="pdf/vieta.pdf">(click here for pdf)</a></span>
+<br/><br/>
+</div>
+
 </div>
 
 
