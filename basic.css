@@ -21,7 +21,7 @@ body{
   width:100%;
   text-align:center;
   background: rgba(255,255,255,1);
-  z-index:100;
+  z-index:90;
 }
 
 .header_nav{
