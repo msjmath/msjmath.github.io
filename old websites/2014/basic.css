@@ -82,3 +82,14 @@ text-decoration:none;
 	margin:auto;
 	background:black;
 }
+
+::-webkit-scrollbar              {width:7px;background:rgba(0,255,0,0.2);}
+::-webkit-scrollbar-thumb        { background:rgba(0,255,0,0.1);}
+
+
+::-webkit-scrollbar-thumb:hover  { background:rgba(0,255,0,0.1);}
+::-webkit-scrollbar:hover        {background:rgba(0,255,0,0.05);}
+
+
+::-webkit-scrollbar-thumb:active { background:rgba(0,255,0,0.2);}
+::-webkit-scrollbar:active       {background:rgba(0,255,0,0.1);}

@@ -21,7 +21,7 @@ body{
   width:100%;
   text-align:center;
   background: rgba(255,255,255,1);
-  z-index:90;
+  z-index:80;
 }
 
 .header_nav{
@@ -107,3 +107,14 @@ div.spacer{
   padding:10px;
   text-align:center;
 }
+
+::-webkit-scrollbar              {width:7px;background: transparent;}
+::-webkit-scrollbar-thumb        { background:white;}
+
+
+::-webkit-scrollbar-thumb:hover  { background:white;}
+::-webkit-scrollbar:hover        {background:rgba(0,255,0,0.0);}
+
+
+::-webkit-scrollbar-thumb:active { background:white;}
+::-webkit-scrollbar:active       {background:rgba(0,255,0,0.0);}
