@@ -7,7 +7,7 @@ var header=
       '<li><a class="nav" href="index.html">Home</a></li>'+
       '<li><a class="nav" href="lectures.html">Lectures</a></li>'+
       '<li><a class="nav" href="events.html">Events</a></li>'+
-      '<li><a class="nav" href="mmm.html">MMM</a></li>'+
+      '<li><a class="nav" href="mmm.html">MMT</a></li>'+
       '<li><a class="nav" href="magmar.html">MagMaR</a></li>'+
       '<li><a class="nav" href="contact.html">Contact</a></li>'+
     '</ul>'+
