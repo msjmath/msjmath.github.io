@@ -108,6 +108,25 @@ div.spacer{
   text-align:center;
 }
 
+a:link {
+    color: #00FF00;
+}
+
+/* visited link */
+a:visited {
+    color: #008800;
+}
+
+/* mouse over link */
+a:hover {
+    color: #AAFFAA;
+}
+
+/* selected link */
+a:active {
+    color: #AAFF00;
+}
+
 ::-webkit-scrollbar              {width:7px;background: transparent;}
 ::-webkit-scrollbar-thumb        { background:white;}
 
