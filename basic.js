@@ -16,6 +16,7 @@ var header=
 
 var footer=''
 
+
 setup =function(){
   document.body.innerHTML=header+document.body.innerHTML+footer;
 };
