@@ -9,10 +9,13 @@ var header=
       '<li><a class="nav" href="events.html">Events</a></li>'+
       '<li><a class="nav" href="mmt.html">MMT</a></li>'+
       '<li><a class="nav" href="magmar.html">MagMaR</a></li>'+
-      '<select>'+
-  '<option value="volvo">About</option>'+
-  '<option value="saab">Registration</option>'+
-'</select>'+
+      '<li class="dropdown">'+
+            '<a href="#" class="dropdown-toggle" data-toggle="dropdown">MagMaR<span class="caret"></span></a>'+
+            '<ul class="dropdown-menu" role="menu">'+
+             ' <li><a href="/magmar">General Information</a></li>'+
+              '<li><a href="/magmar">Schedule</a></li>'+
+            '</ul>'+
+      '</li>'+
       '<li><a class="nav" href="contact.html">Contact</a></li>'+
     '</ul>'+
     '<div class="line"></div>'+
