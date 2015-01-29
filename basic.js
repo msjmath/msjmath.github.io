@@ -12,7 +12,7 @@ var header=
       '<select>'+
   '<option value="volvo">About</option>'+
   '<option value="saab">Registration</option>'+
-</select>
+'</select>'+
       '<li><a class="nav" href="contact.html">Contact</a></li>'+
     '</ul>'+
     '<div class="line"></div>'+
