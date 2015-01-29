@@ -9,15 +9,6 @@ var header=
       '<li><a class="nav" href="events.html">Events</a></li>'+
       '<li><a class="nav" href="mmt.html">MMT</a></li>'+
       '<li><a class="nav" href="magmar.html">MagMaR</a></li>'+
-      '<ul class="nav navbar-nav">'+
-      '<li class="dropdown">'+
-            '<a href="#" class="dropdown-toggle" data-toggle="dropdown">MagMaR<span class="caret"></span></a>'+
-            '<ul class="dropdown-menu" role="menu">'+
-             ' <li><a href="/magmar">General Information</a></li>'+
-              '<li><a href="/magmar">Schedule</a></li>'+
-            '</ul>'+
-      '</li>'+
-       '</ul>'+
       '<li><a class="nav" href="contact.html">Contact</a></li>'+
     '</ul>'+
     '<div class="line"></div>'+
