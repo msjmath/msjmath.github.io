@@ -16,8 +16,8 @@ var header=
              ' <li><a href="/magmar">General Information</a></li>'+
               '<li><a href="/magmar">Schedule</a></li>'+
             '</ul>'+
-      '</ul>'
       '</li>'+
+       '</ul>'+
       '<li><a class="nav" href="contact.html">Contact</a></li>'+
     '</ul>'+
     '<div class="line"></div>'+
