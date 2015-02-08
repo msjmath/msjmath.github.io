@@ -1,0 +1,299 @@
+/*
+Theme Name: StartupWP
+Description: Startup is a startup WordPress theme for anyone looking to build their first website with ease AND power. This theme is HTML5, responsive and includes features such as a custom logo, background, colors, social profile icons, a configurable slider option and more.
+Author: StartupWP
+Author URI: http://startupwp.com/
+Version: 1.0
+Tags: black, blue, gray, silver, white, light, one-column, two-columns, three-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-menu, featured-images, full-width-template, microformats, post-formats, sticky-post, theme-options, threaded-comments
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1;min-height:601px;background-color:#576D63;}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+th, td{padding:2px}big{font-size:125%}small, sup, sub{font-size:80%}sup{vertical-align:super}sub{vertical-align:sub}dd{margin-left:20px}kbd, tt{font-family:courier;font-size:80%}ins{text-decoartion:underline}del, strike, s{text-decoration:line-through}
+
+body{font-family:Tahoma,Helvetica;/*georgia,'times new roman',times,serif;*/color:#333;margin:3% 0 4%;background:#ddd}
+p{margin:10px 0}
+pre{white-space:pre-wrap}
+#content, .widget-container{font-size:87.5%}
+a, h2{color:#09f;text-decoration:none}
+a:hover{text-decoration:underline}
+h1, h2, h3, h4, h5, h6{font-family:'Open Sans',helvetica,arial,sans-serif;font-weight:normal;margin-top:20px;margin-bottom:5px;clear:both;}
+h1{font-size:175%;color:#222;font-weight:bold;text-decoration:underline;}
+h2{font-size:155%;color:#8E0909;text-decoration:underline;}
+h3{font-size:135%;color:#444;font-weight: bold;}
+h4{font-size:125%}
+h5{font-size:115%}
+h6{font-size:105%}
+strong, dt{font-weight:bold}
+em, address, cite, var{font-style:italic}
+code{font-family:'courier new',courier,serif;color:#777}
+.entry-content ul, .entry-content ol, .comment-content ul, .comment-content ol{/*font-family:helvetica,arial,sans-serif;*/margin-left:30px; padding-left: 15px; list-style-type: circle;}
+.entry-content li:before, .comment-content li:before{content: none;}
+ol li:before{content:"" !important}
+#container ol, .comment-content ol{list-style:decimal inside}
+blockquote{padding:0 10px 0 10px;border:#ddd 4px double;margin:10px 2%;background:#f6f6f6}
+input, textarea{font-family:arial,sans-serif;font-size:70%;color:#666;padding:5px;border:1px solid #004a80;background:#f6f6f6}
+#container input, #container textarea{font-size:90%;border:1px solid #ccc}
+input[type=submit]{cursor:pointer}
+#content input[type="submit"], #container #searchsubmit, .button{font-size:100% !important;color:#fff;text-shadow:0 1px 0 #555;padding:8px 10px;border:1px solid #0b81d0;border-radius:3px;box-shadow:0 1px #4cb6fd inset;background:#09f;opacity:0.9}
+#content input[type="submit"]:hover, #container #searchsubmit:hover, .button:hover{opacity:1}
+.clear{clear:both}
+a img, input[type=image]{border:0 none}
+img, video{max-width:100% !important;height:auto}
+
+#breadcrumbs, #twitter-feed{box-shadow:0 0 4px #aaa}
+
+#wrapper{min-width:320px;max-width:1000px;margin:0 auto; }
+header{padding-bottom:20px;clear:both}
+#branding{margin-bottom:10px;float:left}
+#container{padding-bottom:20px;background:#fff;}
+#content{width:64%;padding:0 2%;float:left}
+.page-template-templatestemplate-sidebar-left-php #content, .page-template-templatestemplate-sidebar-left-left-php #content{float:right}
+.page-template-templatestemplate-sidebar-none-php #content, .page-template-templatestemplate-login-php #content{width:96%}
+.page-template-templatestemplate-sidebar-left-right-php #content, .page-template-templatestemplate-sidebar-left-left-php #content, .page-template-templatestemplate-sidebar-right-right-php #content{padding:0}
+#sidebar{width:30%;margin-right:2%;float:right}
+.page-template-templatestemplate-sidebar-left-php #sidebar{margin-right:0;margin-left:2%;float:left}
+.page-template-templatestemplate-sidebar-left-right-php #lsidebar-sidebar, .page-template-templatestemplate-sidebar-left-right-php #rsidebar-sidebar, .page-template-templatestemplate-sidebar-left-left-php #lsidebar-sidebar, .page-template-templatestemplate-sidebar-left-left-php #rsidebar-sidebar, .page-template-templatestemplate-sidebar-right-right-php #lsidebar-sidebar, .page-template-templatestemplate-sidebar-right-right-php #rsidebar-sidebar{width:14%;margin:0 2%}
+.page-template-templatestemplate-sidebar-left-right-php #lsidebar-sidebar, .page-template-templatestemplate-sidebar-left-left-php #lsidebar-sidebar, .page-template-templatestemplate-sidebar-left-left-php #rsidebar-sidebar{float:left}
+.page-template-templatestemplate-sidebar-left-right-php #rsidebar-sidebar, .page-template-templatestemplate-sidebar-right-right-php #lsidebar-sidebar, .page-template-templatestemplate-sidebar-right-right-php #rsidebar-sidebar{float:right}
+.page-template-templatestemplate-sidebar-left-left-php #content, .page-template-templatestemplate-sidebar-left-left-php #rsidebar-sidebar{margin:0 2% 0 0}
+.page-template-templatestemplate-sidebar-right-right-php #content, .page-template-templatestemplate-sidebar-right-right-php #lsidebar-sidebar{margin:0 0 0 2%}
+footer{clear:both}
+
+#social{float:right}
+#social a img{width:32px;height:32px;margin:0 0 10px 10px;opacity:0.7;box-shadow:1px 1px 4px #aaa;float:right}
+#social a img:hover{opacity:1}
+
+nav{position:relative;border-radius:5px;margin-top:10px;background-color:#333;background-image:url(images/nav-bg.png);background-repeat:repeat-x;clear:both}
+nav ul.menu{padding-left:4px}
+nav .parent > a, nav .parent > a:hover{background-image:url(images/arrow.png);background-position:right;background-repeat:no-repeat}
+nav ul ul .parent > a, nav ul ul .parent:hover > a:hover, nav ul ul li:hover ul .parent > a, nav ul ul li:hover ul .parent > a:hover{background-image:url(images/arrow-right.png);background-position:right;background-repeat:no-repeat}
+nav ul, nav ul li{display:inline}
+nav ul li a{display:inline-block;font-family:'lucida grande',helvetica,arial,verdana,sans-serif;font-size:14px;color:#fff;line-height:37px;text-decoration:none;text-shadow:1px 1px 1px #333;padding:0 15px;border-right:1px solid #555}
+nav ul.menu li a{margin-left:-4px}
+nav ul li a:hover{color:#fff;text-decoration:none;box-shadow:0 0 5px #000 inset;background:#444}
+nav .current-menu-item a, nav .current_page_item a{color:#ccc;text-shadow:none}
+nav .current-menu-item .sub-menu a, nav .current_page_item .children a{color:#fff;text-shadow:1px 1px 1px #333}
+nav ul > li:first-child a:hover{border-radius:5px 0 0 5px}
+nav .sub-menu li a, nav .children li a{border-radius:0 !important}
+nav li .sub-menu{margin-left:-4px}
+nav ul li{position:relative}
+nav li ul{display:none;position:absolute;top:29px;left:0}
+nav li ul a{background:#666}
+nav ul ul li:hover ul, nav ul ul ul li:hover ul{left:0;margin:-34px 0 11px 179px}
+nav ul li:hover ul{display:inline-block}
+nav ul ul, nav ul li:hover ul ul, nav ul ul li:hover ul ul{display:none}
+nav ul li:hover ul, nav ul ul li:hover ul, nav ul ul ul li:hover ul{display:block;z-index:2147483647}
+nav ul li:hover ul li a, nav ul ul li:hover ul li a, nav ul ul ul li:hover ul li a{font-size:13px;line-height:30px;width:150px;padding:0 14px;border:1px solid #444;margin:-1px 0 0;opacity:0.9}
+nav ul li:hover ul li a{}
+nav ul ul li:hover ul li a{}
+nav ul ul ul li:hover ul li a{}
+nav ul li:hover ul li a:hover, nav ul ul li:hover ul li a:hover, nav ul ul ul li:hover ul li a:hover{background:#555;opacity:1;box-shadow:none}
+
+#breadcrumbs{color:#666;padding:10px 10px 8px;margin-top:20px;background:#fff}
+#breadcrumbs ul, #breadcrumbs li{display:inline}
+
+#slider{min-height:200px;margin-bottom:20px}
+
+#twitter-feed{margin-bottom:20px}
+#twitter-feed .twtr-doc{border-radius:0}
+#twitter-feed .twtr-widget h3, #twitter-feed .twtr-widget h4{clear:none}
+
+#share{margin:2% 0 1.5%}
+#share .fb-like{float:left}
+#share .twitter-share-button{margin-left:30px;float:left}
+#share .g-plusone{float:left}
+
+header a{outline:none}
+#content, #sidebar{color:#333;line-height:125%}
+.entry-content{text-align:justify}
+.entry-meta, .entry-footer, .comment-meta, #copyright{font-size:90%}
+#site-title a, #site-title h1 a, #site-title h1{font-family:helvetica,arial,sans-serif;font-size:40px;font-weight:bold;color:#449540;text-shadow:2px 2px 0 #000;padding:0;margin:0}
+#site-title a:hover, #site-title h1 a:hover{text-decoration:none}
+#site-description{font-size:112.50%;color:#777}
+h4, h5, h6, .entry-meta, .entry-footer, .comment-meta, #form-allowed-tags code{color:#aaa}
+#sidebar ul{display:inline;padding:0;margin:0}
+.widget-title{font-size:125%;padding-bottom:1px;border-bottom:1px solid #ccc;margin-bottom:5px}
+#respond h3{clear:left}
+footer a{color:#555;}
+#copyright{color:#444;text-align:center;padding:2%}
+
+nav #searchform{margin:7px 7px 0 0;float:right}
+#sidebar #searchform{padding:20px 0}
+#wrapper #s{width:150px;height:16px;border-right:0;float:right}
+#wrapper nav #s{width:200px;height:13px;border:none;border-radius:5px;box-shadow:1px 1px 1px #000 inset;background:#888}
+#s:focus{background:#fff}
+#wrapper nav #s:focus{color:#eee;background:#999}
+#searchsubmit{width:60px;height:28px;font-weight:bold;color:#09f;float:right}
+nav #searchsubmit{display:none}
+#container #searchsubmit{padding:0;border-radius:0 3px 3px 0}
+.error404 #content #searchform, .search #content #searchform{margin-top:55px;float:left}
+
+.post{padding-bottom:20px;border-bottom:#ccc 1px dashed;margin-bottom:20px}
+.entry-title{margin-bottom:2px}
+.single .entry-title{text-align:left;line-height:30px;margin-top:12px;margin-bottom:10px}
+.entry-title a{font-size:22px}
+.nav-next{text-align:left;float:left;}
+.attachment .nav-previous{float:left}
+.nav-previous{text-align:right;float:right;}
+.attachment .nav-next{float:right}
+.comments ul{padding:0;margin:0}
+.comment, .trackback, .pingback{padding:10px;margin:10px 0 10px 0}
+.odd{background:#f6f6f6}
+#form-allowed-tags code{font-size:12px}
+#respond input, #respond textarea{margin:5px 0;overflow:auto}
+#respond input{width:40%}
+#respond textarea{width:98.125%;height:100px}
+#respond #submit{width:auto}
+.avatar{width:32px;height:32px;margin:0 5px 5px 0;float:left}
+
+.sticky{padding:0.01px 15px 15px 15px;margin-top:20px;background:#f6f6f6}
+.bypostauthor{padding:4px;background:#f6f6f6}
+.wp-caption{margin:20px 0}
+.wp-caption-text{}
+.alignleft, .aligncenter, .alignright{text-align:center}
+.gallery-caption{border:#ccc 1px solid}
+.alignleft{margin:0 10px 10px 0;float:left}
+.alignright{margin:0 0 10px 10px;float:right}
+.aligncenter{display:block;margin-left:auto;margin-right:auto;clear:both}
+.size-thumbnail{margin:5px}
+#wp-calendar{width:100%}
+#wp-calendar td{text-align:center}
+#wp-calendar #prev{text-align:left}
+#wp-calendar #next{text-align:right}
+.entry-footer{margin-top:10px}
+.page-link, .entry-footer, .edit-link {clear:both}
+
+@media all and (max-width:1000px){#slider{min-height:0}}
+@media all and (max-width:768px){}
+@media all and (max-width:480px){}
+@media all and (max-width:320px){header, nav #s, #content, #sidebar, footer{width:310px;max-width:310px;text-align:left;margin-left:auto;margin-right:auto}nav ul.menu{padding-left:0}nav .sub-menu, nav .children{display:none !important}nav ul li a, nav ul li a:hover{width:279px;max-width:279px;border:0;border-radius:0 !important;margin-left:0 !important}nav #s{width:286px !important;margin-bottom:5px}.entry-content{text-align:left}}
+
+.home #breadcrumbs, #nav-above, #comment-notes, .form-allowed-tags, .twtr-ft{display:none}
+.attachment #nav-above{display:block}
+
+
+
+
+
+
+body {
+	/*background-image: url(http://msjmath.co.cc/wp-content/uploads/2012/11/msjbg1.png);
+	background-repeat: repeat-y;
+	background-position: center;*/
+
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-radial-gradient(center top, ellipse farthest-corner, #FFFFFF 0%, #052617 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-radial-gradient(center top, ellipse farthest-corner, #FFFFFF 0%, #052617 100%);
+
+	/* Opera */ 
+	background-image: -o-radial-gradient(center top, ellipse farthest-corner, #FFFFFF 0%, #052617 100%);
+	
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(radial, center top, 0, center top, 487, color-stop(0, #FFFFFF), color-stop(1, #052617));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-radial-gradient(center top, ellipse farthest-corner, #FFFFFF 0%, #052617 100%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: radial-gradient(ellipse farthest-corner at center top, #FFFFFF 0%, #052617 100%);
+	background-repeat: no-repeat;
+}
+
+h1.entry-title, .entry-meta {
+	margin-bottom: 20px;
+}
+h2.entry-title {
+	margin-bottom: 10px;
+}
+
+#sidebar {
+	display: none;
+}
+#content {
+	width: 90%;
+	margin: 20px;
+}
+div.entry-footer {
+	display: none;
+}
+div#ourheader {
+	display: none;
+	border: 1px solid black;
+	background-color: #AAA;
+	height: 200px;
+	margin-bottom: 20px;
+}
+#slider {
+	margin-bottom: 0px;
+	border: 1px solid #555;
+}
+#container {
+	border: 1px solid #555; border-top: none;
+}
+#site-title h2 {
+	font-size: 17px;
+	color: #444;
+	margin-top: 5px;
+	margin-left: 5px;
+	text-decoration: none;
+	font-weight: bold;
+} 
+#magmarschedule, .msjtable {
+	font-size: 14px;
+	border: 2px solid black;
+	text-align: center;
+}
+#magmarschedule td, .msjtable td {
+	border: 1px solid black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#magmarscheduleheader, .msjtableheader {
+	background-color: #0C5022;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+
+/* MAGMAR MAGMAR MAGMAR */
+
+#magmarstudents, #magmarteam, #magmarlunch, #magmarshirts {
+	margin-top: 20px;
+	margin-left: 30px;
+	font-family: Arial;
+	font-size: 14px;
+}
+#magmarstudents td, #magmarteam td {
+	padding: 5px;
+}
+#magmarstudents input {
+	width: 105px;
+}
+#magmarstudents input.email {
+	width: 180px;
+}
+#magmarstudents select.grade {
+	width: 70px;
+	height: 27px;
+}
+#magmarstudents option {
+	text-align: center;
+	font-family: Arial;
+}
+#magmarlunch td, #magmarshirts td {
+	padding: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+input.magmarpizza, input.magmartshirts {
+	width: 40px;
+}
+#magmaroptional td.optionaltd {
+	padding-left: 100px;
+	padding-right: 150px;
+}
